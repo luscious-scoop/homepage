@@ -17,3 +17,45 @@ svg {
 	display: block;
 	max-width: 100%;
 }
+
+header {
+	display: flex;
+	flex-direction: column;
+
+	background-color: transparent;
+	margin-top: 20px;
+}
+
+figure {
+	position: relative;
+	width: 220px;
+	margin: 0 auto;
+}
+
+figcaption {
+	font-size: calc(220px * (1 / 4));
+	padding: 8px 12px 0px;
+	position: absolute;
+	bottom: 0;
+	color: #ffffff;
+}
+
+.header-icons img {
+	width: 40px;
+}
+
+.header-icons {
+	display: flex;
+
+	gap: 18px;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.header-text-links p {
+	padding: 4px 12px;
+	text-align: center;
+}
+.header-text-links h1 {
+	text-align: center;
+}
