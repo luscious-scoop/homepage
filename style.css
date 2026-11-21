@@ -1,5 +1,6 @@
 :root {
 	--header-img-width-mobile: 80vw;
+	--header-img-tablet-width: 35vw;
 }
 
 *,
@@ -30,17 +31,23 @@ body {
 	background: #0891b3;
 	background: linear-gradient(
 		169deg,
-		rgba(8, 145, 179, 1) 46%,
-		rgba(255, 255, 255, 1) 15%
+		rgba(8, 145, 179, 1) 20%,
+		rgba(255, 255, 255, 1) 0%
 	);
 }
 
+main {
+	height: 100%;
+	border: 2px solid red;
+	font-size: 300px;
+	background-color: white;
+}
 header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: transparent;
-	margin-top: 20px;
+
 	gap: 8px;
 }
 
@@ -86,4 +93,51 @@ figcaption {
 	font-family: 'PlayFair Display';
 	font-weight: 400;
 	font-size: calc(3vw + 1.5rem);
+}
+
+@media (min-width: 600px) {
+	header {
+		margin-top: 200px;
+		background-color: wheat;
+		flex-direction: row;
+		justify-content: center;
+		width: 95%;
+		position: relative;
+	}
+
+	figcaption {
+		font-size: 3rem;
+		top: -80px;
+		right: 15%;
+		color: black;
+	}
+	figure {
+		position: static;
+		width: var(--header-img-tablet-width);
+
+		flex-shrink: 0;
+	}
+
+	.header-text-links {
+	}
+	.header-text-links h1 {
+		font-size: calc(1rem + 4vw);
+		text-align: center;
+	}
+
+	.header-text-links p {
+		font-size: calc(1rem + 1.2vw);
+	}
+	.header-text-links {
+		display: block;
+	}
+
+	.header-icons {
+		align-self: flex-end;
+		padding: 8px;
+		justify-content: flex-end;
+	}
+	.header-icons img {
+		width: 8%;
+	}
 }
