@@ -1,6 +1,7 @@
 :root {
 	--header-img-width-mobile: 80vw;
 	--header-img-tablet-width: 35vw;
+	--header-img-desktop-width: 15vw;
 }
 
 *,
@@ -98,7 +99,7 @@ figcaption {
 @media (min-width: 600px) {
 	header {
 		margin-top: 200px;
-		background-color: wheat;
+
 		flex-direction: row;
 		justify-content: center;
 		width: 95%;
@@ -118,8 +119,6 @@ figcaption {
 		flex-shrink: 0;
 	}
 
-	.header-text-links {
-	}
 	.header-text-links h1 {
 		font-size: calc(1rem + 4vw);
 		text-align: center;
@@ -127,9 +126,6 @@ figcaption {
 
 	.header-text-links p {
 		font-size: calc(1rem + 1.2vw);
-	}
-	.header-text-links {
-		display: block;
 	}
 
 	.header-icons {
@@ -139,5 +135,52 @@ figcaption {
 	}
 	.header-icons img {
 		width: 8%;
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		position: static;
+		width: 90%;
+		padding: 30px;
+		background-color: #0891b3;
+		align-items: flex-start;
+	}
+	figure {
+		max-width: var(--header-img-desktop-width);
+		position: relative;
+	}
+
+	figcaption {
+		font-size: calc(var(--header-img-desktop-width) * (1 / 5));
+		color: white;
+		left: 0;
+
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.header-icons {
+		margin-top: 40px;
+	}
+	.header-icons img {
+		width: 15%;
+	}
+
+	.header-text-links {
+		gap: 70px;
+		padding: 24px;
+	}
+
+	.header-text-links h1 {
+		font-size: calc(2vw + 1rem);
+		text-align: left;
+
+		align-self: flex-start;
+	}
+	.header-text-links p {
+		font-size: calc(1.5vw + 0.5rem);
 	}
 }
