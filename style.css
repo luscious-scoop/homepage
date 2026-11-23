@@ -32,17 +32,11 @@ body {
 	background: #0891b3;
 	background: linear-gradient(
 		169deg,
-		rgba(8, 145, 179, 1) 20%,
+		rgba(8, 145, 179, 1) 7%,
 		rgba(255, 255, 255, 1) 0%
 	);
 }
 
-main {
-	height: 100%;
-	border: 2px solid red;
-	font-size: 300px;
-	background-color: white;
-}
 header {
 	display: flex;
 	flex-direction: column;
