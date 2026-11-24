@@ -172,9 +172,74 @@ main {
 	font-size: 1.3rem;
 }
 
+footer {
+	width: 100%;
+	background-color: #0891b3;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-size: 1.3rem;
+	gap: 15px;
+}
+
+ul {
+	list-style: none;
+	font-size: 1.2rem;
+}
+
+footer h2 {
+	font-family: 'PlayFair Display';
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.contact-container h2 {
+	text-align: center;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 8px;
+}
+
+.footer-img {
+	width: 100%;
+}
+
+.footer-icons {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+.footer-icons img {
+	width: 15%;
+}
+
+.email-icon,
+.phone-icon {
+	width: 10%;
+	fill: white;
+}
+
+.email-container,
+.phone-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.email-container {
+	margin-top: 8px;
+}
+
 @media (min-width: 600px) {
 	header {
 		margin-top: 200px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 		flex-direction: row;
 		justify-content: center;
@@ -227,6 +292,38 @@ main {
 	.project-description {
 		font-size: 1.8rem;
 	}
+
+	footer {
+		flex-direction: row;
+		justify-content: flex-start;
+		padding: 20px;
+	}
+	.contact-container h2 {
+		align-self: flex-start;
+	}
+
+	.footer-img {
+		width: 38%;
+	}
+	.footer-icons {
+		justify-content: flex-start;
+	}
+
+	.footer-icons img {
+		width: 12%;
+	}
+
+	footer h2 {
+		font-size: calc(1.4rem + 2vw);
+	}
+
+	footer p {
+		font-size: calc(1.1rem + 2vw);
+	}
+
+	footer ul {
+		font-size: calc(0.8rem + 2vw);
+	}
 }
 
 @media (min-width: 1200px) {
@@ -234,7 +331,7 @@ main {
 		position: static;
 		width: 90%;
 		padding: 30px;
-		background-color: #0891b3;
+
 		align-items: flex-start;
 	}
 	figure {
@@ -303,5 +400,30 @@ main {
 	.project-description,
 	.project-links {
 		padding: 24px;
+	}
+	.footer-img {
+		width: 30%;
+	}
+
+	.footer-icons img {
+		width: 10%;
+	}
+
+	.contact-container {
+		gap: 60px;
+	}
+	.contact-container h2 {
+		font-size: 6rem;
+	}
+
+	.contact-container p {
+		font-size: 4rem;
+	}
+	.contact-container ul {
+		font-size: 3.5rem;
+	}
+
+	footer {
+		justify-content: space-evenly;
 	}
 }
