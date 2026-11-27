@@ -347,21 +347,25 @@ footer h2 {
 		padding: 30px;
 
 		align-items: flex-start;
+		gap: 40px;
 	}
 	figure {
 		max-width: var(--header-img-desktop-width);
 		position: relative;
 	}
 
+	.header-img img {
+		position: absolute;
+		width: 95%;
+
+		transform: scale(1.2);
+	}
+
 	figcaption {
 		font-size: calc(var(--header-img-desktop-width) * (1 / 5));
 		color: white;
-		left: 0;
 
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
+		top: 800px;
 	}
 
 	.header-icons {
