@@ -1,6 +1,6 @@
 :root {
 	--header-img-width-mobile: 80vw;
-	--header-img-tablet-width: 35vw;
+	--header-img-tablet-width: 50vw;
 	--header-img-desktop-width: 15vw;
 }
 
@@ -303,7 +303,7 @@ footer h2 {
 	}
 
 	.footer-img {
-		width: 38%;
+		width: 55%;
 	}
 	.footer-icons {
 		justify-content: flex-start;
