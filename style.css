@@ -251,7 +251,7 @@ footer h2 {
 		background-color: #ffffff;
 		flex-direction: row;
 		justify-content: center;
-		width: 95%;
+		width: 90%;
 		position: relative;
 	}
 
@@ -270,8 +270,8 @@ footer h2 {
 	.header-img img {
 		position: absolute;
 		width: 50%;
-		bottom: 0;
-		transform: scale(1.1);
+		top: 0;
+		transform: scale(1.2);
 	}
 
 	.header-text-links h1 {
@@ -289,7 +289,7 @@ footer h2 {
 		justify-content: flex-end;
 	}
 	.header-icons img {
-		width: 10%;
+		width: 15%;
 	}
 
 	.projects-container {
