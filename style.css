@@ -237,10 +237,18 @@ footer h2 {
 }
 
 @media (min-width: 600px) {
+	body {
+		background: #0891b3;
+		background: linear-gradient(
+			169deg,
+			rgba(8, 145, 179, 1) 20%,
+			rgba(255, 255, 255, 1) 0%
+		);
+	}
 	header {
 		margin-top: 200px;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+		background-color: #ffffff;
 		flex-direction: row;
 		justify-content: center;
 		width: 95%;
@@ -251,13 +259,19 @@ footer h2 {
 		font-size: 3rem;
 		top: -80px;
 		right: 15%;
-		color: black;
 	}
 	figure {
 		position: static;
 		width: var(--header-img-tablet-width);
 
 		flex-shrink: 0;
+	}
+
+	.header-img img {
+		position: absolute;
+		width: 50%;
+		bottom: 0;
+		transform: scale(1.1);
 	}
 
 	.header-text-links h1 {
